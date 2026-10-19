@@ -12,7 +12,7 @@ export default function Header({ isSettingsOpen, setIsSettingsOpen }) {
   return (
     <header className="flex flex-col items-center px-4 py-6 sm:py-8 bg-white dark:bg-stone-900 border-b border-stone-200 dark:border-stone-800">
       <div className="flex flex-col items-center gap-2">
-        <h1 className="rounded-xl bg-[#faf7f2] px-4 py-2 shadow-sm">
+        <h1 className="rounded-xl bg-[#faf7f2] dark:bg-stone-800 px-4 py-2 shadow-sm">
           <img
             src="/brand/logo-horizontal-pollinations.jpg"
             alt="Budget ni Mama"
