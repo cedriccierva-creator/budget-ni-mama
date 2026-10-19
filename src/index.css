@@ -40,19 +40,31 @@ body {
   margin: 0;
   min-width: 320px;
   min-height: 100vh;
+  background: transparent;
+  color: #292524;
+}
+
+body::before {
+  content: "";
+  position: fixed;
+  inset: 0;
+  z-index: -1;
+  pointer-events: none;
   background-color: #faf7f2;
   background-image: linear-gradient(rgba(250, 247, 242, 0.88), rgba(250, 247, 242, 0.88)), url('/brand/background-light.jpg');
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
-  background-attachment: fixed;
-  color: #292524;
 }
 
 .dark body {
+  background: transparent;
+  color: #f5f5f4;
+}
+
+.dark body::before {
   background-color: #1c1917;
   background-image: linear-gradient(rgba(28, 25, 23, 0.82), rgba(28, 25, 23, 0.82)), url('/brand/background-dark.jpg');
-  color: #f5f5f4;
 }
 
 button,
